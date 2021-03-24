@@ -1,0 +1,64 @@
+---
+title: "Swirl Courses"
+author: "ElisaRMA"
+date: "3/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+According to the swirl website "swirl is a software package for the R programming language that turns the R console into an interactive learning environment. Users receive immediate feedback as they are guided through self-paced lessons in data science and R programming."
+
+More information can be found on [https://swirlstats.com](https://swirlstats.com) 
+
+## Install swirl
+
+Swirl can be installed using the `install.packages` function
+```{r}
+
+install.packages("swirl")
+
+```
+
+To install any course within swirl, load the package and then install the course
+
+```{r}
+library(swirl)
+install_from_swirl("course")
+```
+
+## Swirl Courses - Data Science Specialization - Coursera:
+
+From the 5 courses within the Data Science Specialization - Foundations using R, 3 courses had its respective course on swirl. The codes used to install each one are available below. 
+
+1. R Programming
+```{r}
+
+install_from_swirl("R Programming")
+
+```
+
+2. Getting and Cleaning Data
+```{r}
+
+install_from_swirl("Getting and Cleaning Data")
+
+```
+
+3. Exploratory Data Analysis
+```{r}
+ 
+install_from_swirl("Exploratory Data Analysis")
+
+```
+
+4. Statistical Inference
+```{r}
+
+install_from_swirl("Statistical Inference")
+
+```
+
+ 

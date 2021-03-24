@@ -1,0 +1,16 @@
+---
+title: "Project 2"
+author: "ElisaRMA"
+date: "3/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project 2
+
+The repository required for this project is available on this link:
+
+[https://github.com/ElisaRMA/ProgrammingAssignment2.git](https://github.com/ElisaRMA/ProgrammingAssignment2.git)
