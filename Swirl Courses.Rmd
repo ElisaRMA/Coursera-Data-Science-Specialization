@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 According to the swirl website "swirl is a software package for the R programming language that turns the R console into an interactive learning environment. Users receive immediate feedback as they are guided through self-paced lessons in data science and R programming."
@@ -61,4 +61,9 @@ install_from_swirl("Statistical Inference")
 
 ```
 
- 
+ 4. Regression Models
+```{r}
+
+install_from_swirl("Regression Models")
+
+```
