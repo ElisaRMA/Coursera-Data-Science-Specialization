@@ -24,17 +24,21 @@ A description of the variables in each of the files is in the included PDF file 
 
 Read the outcome data into R via the `read.csv` function and look at the first few rows.
 
-> outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
-> head(outcome)
+```{r}
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+```
 
 There are many columns in this dataset. You can see how many by typing ncol(outcome) (you can see the number of rows with the nrow function). In addition, you can see the names of each column by typing names(outcome) (the names are also in the PDF document.
 
 To make a simple histogram of the 30-day death rates from heart attack (column 11 in the outcome dataset), run
 
-> outcome[, 11] <- as.numeric(outcome[, 11])
-> ## You may get a warning about NAs being introduced; that is okay
-> hist(outcome[, 11])
 
+```{r}
+outcome[, 11] <- as.numeric(outcome[, 11])
+## You may get a warning about NAs being introduced; that is okay
+hist(outcome[, 11])
+```
 Because we originally read the data in as character (by specifying colClasses = "character" we need to coerce the column to be numeric. You may get a warning about NAs being introduced but that is okay.
 
 ### Finding the best hospital in a state
@@ -46,39 +50,39 @@ The function should use the following template.
 
 
 ```{r}
-
 best <- function(state, outcome) {
 ## Read outcome data
 ## Check that state and outcome are valid
 ## Return hospital name in that state with lowest 30-day death
 ## rate
 }
-
 ```
 
 The function should check the validity of its arguments. If an invalid state value is passed to best, the function should throw an error via the stop function with the exact message “invalid state”. If an invalid outcome value is passed to best, the function should throw an error via the stop function with the exact message “invalid outcome”.
 
 Here is some sample output from the function.
 
-> source("best.R")
+```{r}
+source("best.R")
 
-> best("TX", "heart attack")
+best("TX", "heart attack")
 [1] "CYPRESS FAIRBANKS MEDICAL CENTER"
 
-> best("TX", "heart failure")
+best("TX", "heart failure")
 [1] "FORT DUNCAN MEDICAL CENTER"
 
-> best("MD", "heart attack")
+best("MD", "heart attack")
 [1] "JOHNS HOPKINS HOSPITAL, THE"
 
-> best("MD", "pneumonia")
+best("MD", "pneumonia")
 [1] "GREATER BALTIMORE MEDICAL CENTER"
 
-> best("BB", "heart attack")
+best("BB", "heart attack")
 Error in best("BB", "heart attack") : invalid state
 
-> best("NY", "hert attack")
+best("NY", "hert attack")
 Error in best("NY", "hert attack") : invalid outcome
+``` 
 
 Save your code for this function to a file named best.R.
 
@@ -94,9 +98,7 @@ would return a character vector containing the name of the hospital with the 5th
 Handling ties. It may occur that multiple hospitals have the same 30-day mortality rate for a given cause of death. In those cases ties should be broken by using the hospital name. For example, in Texas (“TX”), the hospitals with lowest 30-day mortality rate for heart failure are shown here.
 
 ```{r}
-
-
-> head(texas)
+head(texas)
 
                         Hospital.Name   Rate Rank
 3935 FORT DUNCAN MEDICAL CENTER         8.1     1
@@ -105,7 +107,6 @@ Handling ties. It may occur that multiple hospitals have the same 30-day mortali
 3954 DETAR HOSPITAL NAVARRO             8.7     4
 4010 METHODIST HOSPITAL,THE             8.8     5
 3962 MISSION REGIONAL MEDICAL CENTER    8.8     6
-
 
 ```
 
@@ -130,16 +131,19 @@ the exact message “invalid outcome”.
 
 Here is some sample output from the function.
 
-> source("rankhospital.R")
+```{r}
+source("rankhospital.R")
 
-> rankhospital("TX", "heart failure", 4)
+ rankhospital("TX", "heart failure", 4)
 [1] "DETAR HOSPITAL NAVARRO"
 
-> rankhospital("MD", "heart attack", "worst")
+ rankhospital("MD", "heart attack", "worst")
 [1] "HARFORD MEMORIAL HOSPITAL"
 
-> rankhospital("MN", "heart attack", 5000)
+ rankhospital("MN", "heart attack", 5000)
 [1] NA
+
+```
 
 Save your code for this function to a file named rankhospital.R.
 
@@ -172,9 +176,9 @@ Here is some sample output from the function.
 
 ```{r}
 
-> source("rankall.R")
+source("rankall.R")
 
-> head(rankall("heart attack", 20), 10)
+head(rankall("heart attack", 20), 10)
 
                 hospital                                state
 AK              <NA>                                    AK
@@ -188,14 +192,14 @@ DC              <NA>                                    DC
 DE              <NA>                                    DE
 FL              SOUTH FLORIDA BAPTIST HOSPITAL          FL
 
-> tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("pneumonia", "worst"), 3)
 
                 hospital                                state
 WI              MAYO CLINIC HEALTH SYSTEM - NORTHLAND   WI
 WV              PLATEAU MEDICAL CENTER                  WV
 WY              NORTH BIG HORN HOSPITAL DISTRICT        WY
 
-> tail(rankall("heart failure"), 10)
+tail(rankall("heart failure"), 10)
 
                 hospital                                                                state
 TN              WELLMONT HAWKINS COUNTY MEMORIAL HOSPITAL                               TN
