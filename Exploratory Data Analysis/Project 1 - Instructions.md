@@ -1,9 +1,3 @@
----
-title: "Project 1 -  Instructions"
-author: "ElisaRMA"
-date: "25/10/2021"
-output: md_document
----
 
 # Project 1 Exploratory Data Analysis INSTRUCTIONS
 
