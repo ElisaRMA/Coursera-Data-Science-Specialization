@@ -1,6 +1,4 @@
-## Project Instructions - Data Scientist's Toolbox 
-
-github repo for rest of specialization: Data Science Coursera
+# Project Instructions - Data Scientist's Toolbox 
 
 ### Part 1
 
