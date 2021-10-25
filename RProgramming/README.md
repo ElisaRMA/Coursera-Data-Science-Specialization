@@ -20,3 +20,5 @@ The functions created for each projects are:
 2. [complete](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/complete.R) (Project 1)
 3. [corr](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/corr.R) (Project 1)
 4. [cachematrix](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/cachematrix.R) (Project 2)
+
+For Project 2, the creation of a github repo was also required. The repo should contain the cachematrix function modified. The repo was forked and modified accordingly and the link to it can be found [here](https://github.com/ElisaRMA/ProgrammingAssignment2)
