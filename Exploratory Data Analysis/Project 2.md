@@ -18,4 +18,4 @@ The plots (.png) are:
 3. [PM2.5 Emissions in Baltimore City, 1999-2008 by Source Type](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/plot3.png)
 4. [PM2.5 Emissions (tons) from coal combustion-related sources](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/plot4.png)
 5. [PM2.5 Emissions (tons) from vehicle sources in Baltimore](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/plot5.png)
-6. [PM2.5 Emissions (tons) from vehicle sources in Baltimore and Los Angeles](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/plot6.png)
+6. [PM2.5 Emissions (tons) from vehicle sources in Baltimore and Los Angeles](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/plot6.png) 
