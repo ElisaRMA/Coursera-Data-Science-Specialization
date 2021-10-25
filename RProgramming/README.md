@@ -1,6 +1,6 @@
 
 
-## R programming - Coursera
+# R programming - Coursera
 
 For the R programming course 3 projects were developed
 
