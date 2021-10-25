@@ -10,9 +10,9 @@ For the R programming course 3 projects were developed
 
 The instructions for each project are:
 
-1. Project 1 - Instructions
-2. Project 2 - Instructions
-3. Project 3 - Instructions 
+1. [Project 1 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%201%20-%20Instructions.md)
+2. [Project 2 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%202%20-%20Instructions.md)
+3. [Project 3 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%203%20-%20Instructions.md  )
 
 The functions created for each projects are:
 
