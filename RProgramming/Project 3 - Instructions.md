@@ -1,7 +1,3 @@
----
-title: "Project 3 - Instructions"
-output: md_document
----
 
 ## Programming Assignment 3 INSTRUCTIONS: Hospital Quality
 
@@ -203,7 +199,7 @@ tail(rankall("heart failure"), 10)
 
                 hospital                                                                state
 TN              WELLMONT HAWKINS COUNTY MEMORIAL HOSPITAL                               TN
-TX              FORT DUNCAN MEDICAL CENTER TX
+TX              FORT DUNCAN MEDICAL CENTER                                              TX
 UT              VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA MEDICAL CENTER       UT
 VA              SENTARA POTOMAC HOSPITAL                                                VA
 VI              GOV JUAN F LUIS HOSPITAL & MEDICAL CTR                                  VI
