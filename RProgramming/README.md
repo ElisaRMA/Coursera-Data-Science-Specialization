@@ -1,6 +1,6 @@
 # R programming - Coursera
 
-Below, the R programming course description copied from the course
+Below, the R programming course description copied from the course [page](https://www.coursera.org/learn/r-programming)
 
 
 ### Course Description
