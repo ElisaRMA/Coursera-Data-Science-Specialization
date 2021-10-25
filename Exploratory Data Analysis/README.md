@@ -1,34 +1,33 @@
-# R programming - Coursera
+# Exploratory Data Analysis - Coursera
 
-Below, the R programming course description copied from the course [page](https://www.coursera.org/learn/r-programming)
+Below, the R programming course description copied from the course [page](https://www.coursera.org/learn/exploratory-data-analysis)
 
 
 ### Course Description
 
-In this course you will learn how to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary for a statistical programming environment, discuss generic programming language concepts as they are implemented in a high-level statistical language. The course covers practical issues in statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, and organizing and commenting R code. Topics in statistical data analysis and optimization will provide working examples.
-Course Content
+This course covers the essential exploratory techniques for summarizing data. These techniques are typically applied before formal modeling commences and can help inform the development of more complex statistical models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the world that can be addressed by the data. We cover in detail the plotting systems in R as well as some of the basic principles of constructing data graphics. We also cover some of the common multivariate statistical techniques used to visualize high-dimensional data.
 
-- Week 1: Overview of R, R data types and objects, reading and writing data
+### Course Content:
 
-- Week 2: Control structures, functions, scoping rules, dates and times
+- Making exploratory graphs
 
-- Week 3: Loop functions, debugging tools
+- Principles of analytic graphics
 
-- Week 4: Simulation, code profiling
+- Plotting systems and graphics devices in R
 
-### Background lectures
+- The base, lattice, and ggplot2 plotting systems in R
 
-Background lectures about the content of the course with respect to other quantitative courses, course logistics, and the R programming language are provided as reference material. It is not necessary to watch the videos to complete the course, however you may find them useful.
+- Clustering methods
 
+- Dimension reduction techniques
 
 ### Course Textbook
 
-The book R Programming for Data Science covers all of the lecture material in this course.
+The book Exploratory Data Analysis with R covers the lecture material in this course.
 
-### Assessments
-#### Quizzes
+### Weekly quizzes
 
-- There are four weekly quizzes. 
+- There are two quizzes (Weeks 1 and 2).
 
 - You must earn a grade of at least 80% to pass a quiz.
 
@@ -36,62 +35,35 @@ The book R Programming for Data Science covers all of the lecture material in th
 
 - The score from your most successful attempt will count toward your final grade.
 
-#### Programming Assignments
+### The Course Projects
 
-- There are three required programming assignments.
+The two course projects will be assessed via peer assessment. In these projects, you will be asked to construct or reproduce certain plots, the purpose of which is to make you familiar with various plotting options. You will be evaluated on the plot that you produce and the code that you write to construct the plot. Course projects evaluated via peer assessment will make use of your GitHub account. 
 
-- You must earn a grade of at least 80% to pass a programming assignment 
+For each Course Project, you are required to evaluate and grade at least four of your classmates' projects. 
+Grading policy
 
-- Programming Assignments 1 and 3 are graded via unit tests using a submission script that compares the output of your functions to the correct output.
+You must score at least 80% on all assignments (Quizzes & Projects) to pass the course.
 
-- Programming Assignment 2 is submitted differently and graded via a peer review.
+Your final grade will be calculated as follows:
 
-#### swirl Programming Assignment (practice)
+- Quiz 1 = 20%
 
-- In this course, you have the option to use the swirl R package to practice some of the concepts we cover in lectures.
+- Quiz 2 = 20%
 
-- While these lessons will give you valuable practice and you are encouraged to complete as many as possible, please note that they are completely optional and you can get full marks in the class without completing them.
+- Course Project 1 = 25%
 
- 
-### Grading Policy
+- Course Project 2 = 35%
 
-You must score at least 80% on all required assignments (Quizzes & Programming Assignments) to pass the course. Your final grade will be calculated as follows:
+-----------------------------------------------
 
-- Week 1 Quiz - 20%
+For the Exploratory Data Analysis course 2 projects were developed
 
-- Week 2 Quiz - 10%
+1.
+2.
 
-- Week 3 Quiz - 5%
+The projects instructions are:
 
-- Week 4 Quiz - 10%
+1.
+2.
 
-- Programming Assignment 1 (Air Pollution) - 20%
-
-- Programming Assignment 2 (Lexical Scoping) - 10%
-
-- Programming Assignment 3 (Hospital Quality) - 25%
-
-- swirl Programming Assignment (practice) - 0% 
-
---------------------------
-
-For the R programming course 3 projects were developed
-
-1. Air Pollution
-2. Lexical Scoping
-3. Hospital Quality
-
-The instructions for each project are:
-
-1. [Project 1 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%201%20-%20Instructions.md)
-2. [Project 2 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%202%20-%20Instructions.md)
-3. [Project 3 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%203%20-%20Instructions.md  )
-
-The functions created for each projects are:
-
-1. [pollutantmean](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/pollutantmean.R) (Project 1)
-2. [complete](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/complete.R) (Project 1)
-3. [corr](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/corr.R) (Project 1)
-4. [cachematrix](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/cachematrix.R) (Project 2)
-
-For Project 2, the creation of a github repo was also required. The repo should contain the cachematrix function modified. The repo was forked and modified accordingly and the link to it can be found [here](https://github.com/ElisaRMA/ProgrammingAssignment2)
+The projects files 
