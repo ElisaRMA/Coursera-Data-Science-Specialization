@@ -56,14 +56,12 @@ Your final grade will be calculated as follows:
 
 -----------------------------------------------
 
-For the Exploratory Data Analysis course 2 projects were developed
-
-1.
-2.
-
 The projects instructions are:
 
-1.
-2.
+1. [Project 1 Instructions - 3 Plots](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/Project%201%20-%20Instructions.md)
+2. [Project 1 Instructions - 6 Plots](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/Project%202%20-%20Instructions.md)
 
 The projects files 
+
+1. [Project 1 - 3 Plots](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/Project%201.md) 
+2. [Project 1 - 6 Plots](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/Project%202.md) 
