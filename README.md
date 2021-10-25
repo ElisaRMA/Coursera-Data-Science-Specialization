@@ -5,8 +5,8 @@ This repo contains all the projects developed for the courses within the [Data S
 The final Capstone Project can be found on a specific [repository(site)
 
 The courses were:
-1.  The Data Scientist’s Toolbox
-2.  R programming
+1.  [The Data Scientist’s Toolbox](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/Data%20Scientist's%20Toolbox)
+2.  [R programming](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/RProgramming)
 3.  Getting and Cleaning Data
 4.  Exploratory Data Analysis
 5.  Reproducible Research
