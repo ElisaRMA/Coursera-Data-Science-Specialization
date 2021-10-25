@@ -53,7 +53,7 @@ The book R Programming for Data Science covers all of the lecture material in th
 - While these lessons will give you valuable practice and you are encouraged to complete as many as possible, please note that they are completely optional and you can get full marks in the class without completing them.
 
  
-###Grading Policy
+### Grading Policy
 
 You must score at least 80% on all required assignments (Quizzes & Programming Assignments) to pass the course. Your final grade will be calculated as follows:
 
@@ -73,7 +73,7 @@ You must score at least 80% on all required assignments (Quizzes & Programming A
 
 - swirl Programming Assignment (practice) - 0% 
 
-</h>
+--------------------------
 
 For the R programming course 3 projects were developed
 
