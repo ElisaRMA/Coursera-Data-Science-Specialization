@@ -1,6 +1,6 @@
 # Data Science Specialization - Coursera 
 
-This repo contains all the projects developed for the courses within the Data Science Specialization from Johns Hopkins University, on [Coursera](https://www.coursera.org/specializations/jhu-data-science). The projects were required to achieve the certificate and were all evaluated on each respective course. 
+This repo contains all the projects developed for the courses within the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) from Johns Hopkins University, on Coursera. The projects were required to achieve the certificate and were all evaluated on each respective course. 
 
 The final Capstone Project can be found on a specific [repository(site)
 
