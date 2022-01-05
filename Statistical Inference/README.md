@@ -10,18 +10,18 @@ Course Content
 
 The course is taught via 13 lectures
 
-1. Introduct
-2. Probabil
-3. Conditional Probabil
-4. Expectati
-5. Varia
-6. Common Distributi
-7. Asymptot
-8. T confidence interv
-9. Hypothesis test
-10. P-val
-11. Po
-12. Multiple Test
+1. Introduction
+2. Probability
+3. Conditional Probability
+4. Expectations
+5. Variance
+6. Common Distributions
+7. Asymptotics
+8. T confidence intervals
+9. Hypothesis testing
+10. P-value
+11. Power
+12. Multiple Testing
 13. Resampling
 
 ## YouTube Videos
