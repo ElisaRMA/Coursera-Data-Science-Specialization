@@ -1,6 +1,6 @@
 # Statistical Inference - Coursera
 
-Below, the course description copied from the course [page](https://www.coursera.org/learn/reproducible-research?specialization=jhu-data-science)
+Below, the course description copied from the course [page](https://www.coursera.org/learn/statistical-inference?specialization=jhu-data-science)
 
 
 ## Course Description
@@ -10,31 +10,19 @@ Course Content
 
 The course is taught via 13 lectures
 
-    1. Introduction
-
-    2. Probability
-
-    3. Conditional Probability
-
-    4. Expectations
-
-    5. Variance
-
-    6. Common Distributions
-
-    7. Asymptotics
-
-    8. T confidence intervals
-
-    9. Hypothesis testing
-
-    10. P-values
-
-    11. Power
-
-    12. Multiple Testing
-
-    13. Resampling
+1. Introduct
+2. Probabil
+3. Conditional Probabil
+4. Expectati
+5. Varia
+6. Common Distributi
+7. Asymptot
+8. T confidence interv
+9. Hypothesis test
+10. P-val
+11. Po
+12. Multiple Test
+13. Resampling
 
 ## YouTube Videos
 
@@ -65,14 +53,10 @@ If you would just like the full set of lecture pdfs, grab them [here](https://gi
 If you would just like the full set of Rmd files for the lecture code, get it [here](https://github.com/bcaffo/courses/blob/master/06_StatisticalInference/rmd.zip?raw=true.
 
 ## Quizzes
-
-    - There are four quizzes.
-
-    - You must earn a grade of at least 80% to pass a quiz.
-
-    - You may attempt each quiz up to 3 times in 8 hours.
-
-    - The score from your most successful attempt will count toward your final grade.
+* There are four quizzes.
+* You must earn a grade of at least 80% to pass a quiz.
+* You may attempt each quiz up to 3 times in 8 hours.
+* The score from your most successful attempt will count toward your final grade.
 
 The quizzes will cover the material from that week. The quizzes don't always exactly correspond to the material for that week. However, the material is always covered before the quiz is due. Here's the rough makeup
 
@@ -103,6 +87,6 @@ Your final grade will be calculated as follows:
 
 For this course, one project was developed, that should be divided into two parts:
 
-- [Instructions] 
-- [Part 1] 
-- [Part 2] 
+- [Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Statistical%20Inference/Project%20Instructions.md) 
+- [Part 1 - Simulation Data](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Statistical%20Inference/Statistical%20Inference%20Project%20-%20Simulation%20Data.pdf) 
+- [Part 2 - Data Analysis](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Statistical%20Inference/Statistical%20Inference%20Project%20-%20Data%20Analysis.pdf)
