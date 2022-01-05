@@ -1,6 +1,6 @@
 # Exploratory Data Analysis - Coursera
 
-Below, the R programming course description copied from the course [page](https://www.coursera.org/learn/exploratory-data-analysis)
+Below, the course description copied from the coursera [page](https://www.coursera.org/learn/exploratory-data-analysis)
 
 
 ### Course Description
