@@ -1,0 +1,179 @@
+---
+title: "Statistical Inference Project - Data Analysis"
+author: "ElisaRMA"
+date: "5/6/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Overview
+
+The objective of this second part of the project is to load and analyze the ToothGrowth data, a dataset available in R.
+This dataset describes the treatment of 60 ginea pigs with ascorbic acid and orange juice (`supp`), at different doses (`dose`), monitoring the lenght of the odontoblasts (cells responsible for tooth growth) (`len`).
+
+All the code used in this project is described in the **Appendix**
+
+## Loading ToothGrowth data
+
+To load the ToothGrowth data the function `data()` was used. Then, to get a first overview of the data, the `head` function was used.
+
+```{r load and head, echo=FALSE, message=FALSE, warning=FALSE}
+data("ToothGrowth")
+```
+
+## Exploratory data analyses and summary of ToothGrowth data
+
+After loading the data, some exploratory analysis, as instructed, were performed.The first function used was `summary()`. With this function we could get a overview of each column, and the structure of the data.
+
+```{r summary, echo=FALSE, message=FALSE, warning=FALSE}
+summary(ToothGrowth)
+```
+
+Then, the data was visualized using two boxplots and a histogram, to understand how the treatment and doses affected tooth length and how the data was distributed: 
+
+```{r boxplot, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(ggpubr)
+bx1 <- ggplot(ToothGrowth, aes(y=len, x=supp))+ geom_boxplot()
+bx2 <- ggplot(ToothGrowth, aes(y=len, x=supp))+ geom_boxplot(aes(fill=factor(dose)))
+ht <- ggplot(ToothGrowth, aes(len)) + geom_histogram(binwidth=3, colour='black')
+ggarrange(ggarrange(bx1, bx2, ncol = 2), ht, nrow = 2)
+
+```
+
+## Comparing tooth growth by supp and dose
+
+Based on the data, two important questions arise: 'Is there a difference between treatments?' and 'Is there a difference between doses in each treatment?' 
+
+To answer such questions, simple t-tests can be applied. For the first question, our hypotheses could be:
+
+* H0:$\mu VC = \mu OJ$
+* Ha: $\mu OJ \neq \mu VC$
+
+```{r message=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+ttest <-t.test(len~supp, ToothGrowth)
+```
+As observed, the p-value was `r ttest$p.value` and the confidence interval was `r ttest$conf.int` 
+
+For the second question, our hypothesis could be, for each supp:
+
+* H0: all $\mu$ are equal
+* Ha1 and 4:$\mu dose1 \neq \mu dose0.5$
+* Ha2 and 5:$\mu dose2 \neq \mu dose0.5$
+* Ha3 and 6:$\mu dose2 \neq \mu dose1$
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyr); library(dplyr)
+        
+ha14 <- subset(ToothGrowth, dose %in% c(0.5, 1))
+ha25 <- subset(ToothGrowth, dose %in% c(0.5, 2))
+ha36<- subset(ToothGrowth, dose %in% c(1, 2))
+
+ha1OJ <- subset(ha14, supp=='OJ')
+ha2OJ <- subset(ha25, supp=='OJ')
+ha3OJ <- subset(ha36, supp=='OJ')
+
+ha4VC <- subset(ha14, supp=='VC')
+ha5VC <- subset(ha25, supp=='VC')
+ha6VC<- subset(ha36, supp=='VC')
+
+t1 <- t.test(len~dose,ha1OJ)
+t2 <- t.test(len~dose,ha2OJ)
+t3 <- t.test(len~dose,ha3OJ)
+t4 <- t.test(len~dose,ha4VC)
+t5 <- t.test(len~dose,ha5VC)
+t6 <- t.test(len~dose,ha6VC)
+
+test <- data.frame(test=c("conf.int", "p.value"),
+             supp=c("OJ", "OJ", "OJ", "VC", "VC", "VC"),
+             id = c('mu1 != mu0.5', 'mu1 != mu0.5','mu2 != mu0.5', 'mu2 != mu0.5',
+                    'mu2 != mu1','mu2 != mu1','mu1 != mu0.5', 'mu1 != mu0.5',
+                    'mu2 != mu0.5', 'mu2 != mu0.5', 'mu2 != mu1', 'mu2 != mu1')) 
+test$value <- list(t1$p.value, t1$conf.int, t2$p.value, t2$conf.int, t3$p.value, t3$conf.int, 
+                   t4$p.value, t4$conf.int, t5$p.value, t5$conf.int, t6$p.value, t6$conf.int )
+test
+```
+
+## Conclusions and Assumptions 
+
+Based on the p-values and the confidence intervals observed, it was not possible reject the null hypothesis, given that the p value is > 0.05 and the confidence interval crossed 0. Therefore, there is no difference between supplements (Orange Juice or Arcorbic Acid). 
+However, taking into consideration the doses used, both p value and confidence intervals allow us to reject the null hypothesis, suggesting that the higher the dose, the larger the effect, for both supplements.
+
+To draw such conclusions, the assumptions made were:
+
+* The treatment was randomized on the 60 guinea pigs
+* The n used in this study was enough to represent the entire population of guinea pigs, allowing us to generalize the results of the study.
+* The variance was assumed to be unequal (var.equal = FALSE was kept as default)
+* The data are iid Gaussian and as it increases, it gets closer to a normal distribution.
+
+
+# Appendix
+
+```{r, eval=FALSE}
+
+# load the data
+data("ToothGrowth")
+
+#summary of ToothGrowth
+summary(ToothGrowth)
+
+# PLOT
+
+# Loads ggplot2 and ggpubr
+library(ggplot2)
+library(ggpubr)
+# Creates two boxplots, one by supp and other by supp and dose.
+bx1 <- ggplot(ToothGrowth, aes(y=len, x=supp))+ geom_boxplot()
+bx2 <- ggplot(ToothGrowth, aes(y=len, x=supp))+ geom_boxplot(aes(fill=factor(dose)))
+# Creates a histogram to show the distribution of the data
+ht <- ggplot(ToothGrowth, aes(len)) + geom_histogram(binwidth=3, colour='black')
+# Arranges the data into one single plot, with the histogram below the two boxplots:
+# So the boxplots are arranged into a plot with two columns, side by side. 
+# Then, this plot is arranged with the histogram, one below the other, so, 2 rows. 
+ggarrange(ggarrange(bx1, bx2, ncol = 2), ht, nrow = 2)
+
+# T-test between the supplements
+ttest <-t.test(len~supp, ToothGrowth)
+
+# Extracts both pvalue and confidence interval
+ttest$p.value
+ttest$conf.int
+
+# Loads tidyr and dplyr
+library(tidyr); library(dplyr)
+
+# Subsets the ToothGrowth into the doses, two by two, as the ttest will be performed
+ha14 <- subset(ToothGrowth, dose %in% c(0.5, 1))
+ha25 <- subset(ToothGrowth, dose %in% c(0.5, 2))
+ha36<- subset(ToothGrowth, dose %in% c(1, 2))
+
+# Within that subset, OJ and VC are separated.
+ha1OJ <- subset(ha14, supp=='OJ')
+ha2OJ <- subset(ha25, supp=='OJ')
+ha3OJ <- subset(ha36, supp=='OJ')
+ha4VC <- subset(ha14, supp=='VC')
+ha5VC <- subset(ha25, supp=='VC')
+ha6VC<- subset(ha36, supp=='VC')
+
+# T-test for each combination of dose, within each supp
+t1 <- t.test(len~dose,ha1OJ)
+t2 <- t.test(len~dose,ha2OJ)
+t3 <- t.test(len~dose,ha3OJ)
+t4 <- t.test(len~dose,ha4VC)
+t5 <- t.test(len~dose,ha5VC)
+t6 <- t.test(len~dose,ha6VC)
+
+# Creates a data frame to display all pvalues and conf.intervals
+test <- data.frame(test=c("conf.int", "p.value"),
+             supp=c("OJ", "OJ", "OJ", "VC", "VC", "VC"),
+             id = c('mu1 != mu0.5', 'mu1 != mu0.5','mu2 != mu0.5', 'mu2 != mu0.5',
+                    'mu2 != mu1','mu2 != mu1','mu1 != mu0.5', 'mu1 != mu0.5',
+                    'mu2 != mu0.5', 'mu2 != mu0.5', 'mu2 != mu1', 'mu2 != mu1')) 
+test$value <- list(t1$p.value, t1$conf.int, t2$p.value, t2$conf.int, t3$p.value, 
+                   t3$conf.int, t4$p.value, t4$conf.int, t5$p.value, t5$conf.int, 
+                   t6$p.value, t6$conf.int )
+```
+
