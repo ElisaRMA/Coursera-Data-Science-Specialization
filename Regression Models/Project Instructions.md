@@ -24,4 +24,3 @@ You work for Motor Trend, a magazine about the automobile industry. Looking at a
 * Did the report include an executive summary?
 * Was the report done in Rmd (knitr)? 
 
-D:/Users/Elisa/Documents/Dev/R/Coursera-Data-Science-Specialization/Regression Models/Project Instructions.md
