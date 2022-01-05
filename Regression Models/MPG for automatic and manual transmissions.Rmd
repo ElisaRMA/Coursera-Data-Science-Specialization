@@ -1,0 +1,94 @@
+---
+title: "MPG for automatic and manual transmissions"
+author: "ElisaRMA"
+date: "6/10/2021"
+output: pdf_document
+---
+
+##  Summary 
+
+This report analyses the mtcars dataset with the objective to explore the relationship between miles per gallon (MPG) and other variables, specially the transmission type (manual or automatic). This report was elaborated as part of the Data Science Specialization at Coursera. 
+
+## Exploratory Data Analysis 
+
+The mtcars dataset is a available at R base using the `data()` function as follows. To begin a exploratory data analysis is useful. For such analysis, the function `boxplot` with the two variables of interest can be used, as demonstrated below. For the `am` variable 0 is automatic and 1 is manual and by observing the plot, it is possible to infer that manual cars have a higher `mpg.` (plot in the appendix)
+
+```{r boxplot exploratory, fig.align='center', fig.height=3, fig.width=4, message=FALSE, warning=FALSE, eval=FALSE}
+data("mtcars")
+boxplot(mtcars$mpg ~ mtcars$am)
+     
+```
+
+## Model Selection
+
+With this in mind, we will analyze the relationship between `mpg` and `am` only, ignoring the other variables, using a linear regression. The formula is, then: mpg = intercept + am*slope
+
+```{r model1}
+model1 <- lm(mpg ~ factor(am), data = mtcars)
+summary(model1)$coeff
+```
+As observed, the intercept or mean `mpg` for automatic cars is 17.147. Therefore, we expect an increase of 7.245 in `mpg` for manual cars. 
+However, by looking at the R-squared of 0.3385 (below) it is evident that only 34% of the total variation on `mpg` is represented by the model, so `am` alone is not enough to explain the tendencies in `mpg`. The plot showing this total variation explained by the model is in the appendix. 
+```{r}
+summary(model1)$adj.r.squared
+```
+With this information, we can attempt to find another model that fits the data in a more efficient way, using the remaining variables of the mtcars dataset and the anova test:
+
+```{r}
+model2 <- lm(mpg ~ factor(am)+cyl+disp,data=mtcars)
+model3 <- lm(mpg ~ factor(am)+cyl+disp+hp+drat,data=mtcars)
+model4 <- lm(mpg ~ factor(am)+cyl+disp+hp+drat+wt+qsec,data=mtcars)
+model5 <- lm(mpg ~ factor(am)+cyl+disp+hp+drat+wt+qsec+factor(vs)+gear,data=mtcars)
+model6 <- lm(mpg ~ factor(am)+cyl+disp+hp+drat+wt+qsec+factor(vs)+gear+carb,data=mtcars)
+anova(model1, model2, model3, model4, model5, model6)[,1:6]
+
+```
+By the p-values above, by adding the variables `cyl`, `disp`, `wt`and `qsec` the `mpg` variability can be better explained. The model 4 in this case, would be a good model to explain the `mpg`, as demonstrated by its R squared, with a value of 83% approximately. This r squared value demonstrates that 83% of the variability of `mpg`is explained by the model in question and comparing this plot with the one from model 1 is evident how much the model improved with the addition of these 4 variables. 
+
+In addition, the residual plot of such model does not follow any pattern, indicating that such model is indeed applicable to this dataset (plot in appendix). 
+
+```{r}
+summary(model4)$adj.r.squared
+```
+
+## Conclusions 
+
+By the analysis developed herein it is possible to conclude that `mpg` can be partially explained by the `am` variable, in which a manual car have a slight tendency to higher `mpg` values (7.25 mpg higher). However, transmission alone is only responsible for 34% of the variability observed in `mpg` and other factors are necessary to explain how many miles/gallon a given car can make.  
+
+## Appendix
+
+```{r boxplot appendix, fig.width=5, fig.height=4, fig.align='center', echo=FALSE}
+data("mtcars")
+boxplot(mtcars$mpg ~ mtcars$am)
+     
+```
+
+```{r,rsquared1,echo=FALSE}
+library(ggplot2)
+e1 <- c(resid(lm(mpg ~ 1, data = mtcars)),resid(model1))
+fit1  <-  factor(c(rep("Itc", nrow(mtcars)), rep("Itc, slope", nrow(mtcars))))
+ggplot(data.frame(e = e1, fit = fit1), aes(y = e1, x = fit1, fill = fit1))+
+geom_dotplot(binaxis = "y", stackdir = "center", binwidth = .7)+
+xlab("Fitting approach for model 1")+
+ylab("Residual mpg")
+
+```
+
+
+```{r,rsquared2,echo=FALSE}
+
+
+e4 <- c(resid(lm(mpg ~ 1, data = mtcars)),resid(model4))
+fit4  <-  factor(c(rep("Itc", nrow(mtcars)), rep("Itc, slope", nrow(mtcars))))
+ggplot(data.frame(e4 = e4, fit4 = fit4), aes(y = e4, x = fit4, fill = fit4))+
+geom_dotplot(binaxis = "y", stackdir = "center", binwidth = .7)+
+xlab("Fitting approach for model 4")+
+ylab("Residual mpg")
+
+```
+
+```{r resids, fig.align='center', echo=FALSE}
+
+par(mfrow = c(2, 2))
+a <- plot(model4)
+```
