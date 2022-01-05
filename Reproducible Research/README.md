@@ -54,6 +54,6 @@ Learners must pass every graded assessment to pass the course, regardless of the
 
 For this course, 2 projects were developed and they should be submitted via github repository. The instructions, project content and repositories are in the following links:
 
-1. [Project 1 - Repo and Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Exploratory%20Data%20Analysis/Project%201%20-%20Instructions.md)
+1. [Project 1 - Repo and Instructions]https://github.com/ElisaRMA/RepData_PeerAssessment1)
 2. [Project 2 - Repo and Instructions](https://github.com/ElisaRMA/Rep.Research)
 3. [Project 2 - RPubs publication](https://rpubs.com/mirandeli/742203)
