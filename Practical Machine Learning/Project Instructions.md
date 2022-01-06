@@ -1,33 +1,71 @@
-# Instructions
+# Practical Machine Learning - Coursera
 
-## Background
+Below, the course description copied from the course [page](https://www.coursera.org/learn/practical-machine-learning?specialization=jhu-data-science)
 
-Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here: http://groupware.les.inf.puc-rio.br/har (see the section on the Weight Lifting Exercise Dataset). 
 
-## Data 
+## Course Description
 
-The training data for this project are available here: 
+One of the most common tasks performed by data scientists and data analysts are prediction and machine learning. This course will cover the basic components of building and applying prediction functions with an emphasis on practical applications. The course will provide basic grounding in concepts such as training and tests sets, overfitting, and error rates. The course will also introduce a range of model based and algorithmic machine learning methods including regression, classification trees, Naive Bayes, and random forests. The course will cover the complete process of building prediction functions including data collection, feature creation, algorithms, and evaluation.
 
-https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv
 
-The test data are available here:
+## Course Content
 
-https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
+* Prediction study design
 
-The data for this project come from this source: http://groupware.les.inf.puc-rio.br/har. If you use the document you create for this class for any purpose please cite them as they have been very generous in allowing their data to be used for this kind of assignment. 
+* In sample and out of sample errors
 
-## What you should submit
+* Overfitting
 
-The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases. 
+* Receiver Operating Characteristic (ROC) curves
 
-### Peer Review Portion
+* The caret package in R
 
-Your submission for the Peer Review portion should consist of a link to a Github repo with your R markdown and compiled HTML file describing your analysis. Please constrain the text of the writeup to < 2000 words and the number of figures to be less than 5. It will make it easier for the graders if you submit a repo with a gh-pages branch so the HTML page can be viewed online (and you always want to make it easy on graders :-).
+* Preprocessing and feature creation
 
-### Course Project Prediction Quiz Portion
+* Prediction with regression
 
-Apply your machine learning algorithm to the 20 test cases available in the test data above and submit your predictions in appropriate format to the Course Project Prediction Quiz for automated grading. 
+* Prediction with decision trees
 
-## Reproducibility 
+* Prediction with random forests
 
-Due to security concerns with the exchange of R code, your code will not be run during the evaluation by your classmates. Please be sure that if they download the repo, they will be able to view the compiled HTML version of your analysis. 
+* Boosting
+
+* Prediction blending
+
+## Weekly quizzes
+
+* There are three weekly quizz* 
+* You must earn a grade of at least 80% to pass a q* 
+* You may attempt each quiz up to 3 times in 8 hou* 
+* The score from your most successful attempt will count toward your final grade.
+
+## The Course Project
+
+The Course Project has two parts:
+
+Course Project Writeup: This peer-assessed portion of the Course Project in Practical Machine Learning is worth 20% of the final grade.
+
+Course Project Prediction Quiz: This prediction programming portion of the Course Project is also worth 20% of your final grade. 
+
+You must earn a grade of at least 80% on both portions to pass the Course Project. 
+
+
+## Grading Policy
+
+You must score at least 80% on all assignments (Quizzes & Project) to pass the course.
+
+Your final grade will be calculated as follows:
+
+* Quiz 1 = 15%
+* Quiz 2 = 15%
+* Quiz 3 = 15%
+* Quiz 4 = 15%
+* Course Project Writeup (peer-assessed) = 20%
+* Course Project Submission (programming) = 20%
+    
+--------------------------
+
+For this course, one project was developed, that should be divided into two parts:
+
+- [Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Practical%20Machine%20Learning/Project%20Instructions.md) 
+- [Project publication](https://elisarma.github.io/Practical-ML-Coursera/index) 

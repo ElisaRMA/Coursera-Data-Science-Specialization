@@ -63,3 +63,9 @@ This is the training data to get you started that will be the basis for most of 
 Later in the course you may use external data sets to augment your model as you see fit.
 
 --------------------------
+
+The links for the github repo, slideck and app are:
+- [Instructions]()
+- [Repo](https://github.com/ElisaRMA/Capstone-DS-Specialization)
+- [Slideck](https://rpubs.com/mirandeli/WordPred)
+- [App](https://mirandeli.shinyapps.io/wordpred/)
