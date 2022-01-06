@@ -78,5 +78,10 @@ You must score at least 80% on all graded assignments (Quizzes & Project) to pas
 - swirl Programming Assignment (optional) - 0%
 
 
+---------------------------
 
+For this course, one project was required. The submission should be a github repo with the required content.
 
+[The project instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Getting%20and%20Cleaning%20Data/Project-Instructions.md)
+
+[The project repo ](https://github.com/ElisaRMA/Getting-and-Cleaning-Data-Course-Project)
