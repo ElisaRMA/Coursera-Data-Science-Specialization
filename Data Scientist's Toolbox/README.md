@@ -1,22 +1,38 @@
-# Project Instructions - Data Scientist's Toolbox 
+# Developing Data Products  
 
-### Part 1
+Below, the course description copied from the course [page](https://www.coursera.org/learn/data-scientists-tools)
 
-The Course Project for this course is pretty straightforward. Now that you’ve learned about the basic tools found in the data scientist’s toolbox, we want to make sure that you’ve assembled those tools and are ready to begin using them. This easy project is your chance to demonstrate that you’ve done the basic software setup (R, RStudio, and Github) that will get you through the rest of the Data Science Specialization.
+Week 1 - Learning Objectives
 
-* Install R
-* Install Rstudio
-* Open Rstudio and take a screenshot
-* Submit a screenshot of Rstudio open on your screen using one of these formats: png, jpg, gif, pdf
+* Define data science
+* Define data
+* Use resources to get help with problems
 
-Set up a Github account (you may use your own name or a pseudonym). Create a repo called datasciencecoursera Submit the link to your GitHub account (or a direct link to your datasciencecoursera repo)
+Week 2 - Learning Objectives
 
-### Part 3
+* Complete the R installation process
+* Complete the RStudio installation process
+* Practice navigating in RStudio
+* Give examples of R Packages
 
-* Fork the data sharing repository here: [https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
-* Submit the link to the forked repository on your Github account.
+Week 3 - Learning Objectives
 
-### Part 4
+* Describe version control and its benefits
+* Use Git and GitHub
+* Complete the process of linking GitHub and RStudio
+* Apply version control to projects
 
-Create a text file called HelloWorld.md Add the line "## This is a markdown file" (without the quotation marks) to the document (without the quotation marks) Push the document to the datasciencecoursera repo you created on Github Submit the link to the HelloWorld.md file on your Github repo.
+Week 4 - Learning Objectives
+
+* Use R Markdown
+* Propose data science questions
+* Discuss experimental design and its importance for data science
+* Summarize the qualities of big 
+
+----------------------------------
+
+This course only required the creation of a github repo
+
+- [Project Instructions]()
+- [Github Repo](https://github.com/ElisaRMA/datasciencecoursera.git)
 
