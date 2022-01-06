@@ -1,97 +1,72 @@
-# R programming - Coursera
+# Developing Data Products - Coursera 
 
-Below, the R programming course description copied from the course [page](https://www.coursera.org/learn/r-programming)
+Below, the course description copied from the course [page](https://www.coursera.org/learn/data-products?specialization=jhu-data-science)
 
+## Course Description 
 
-### Course Description
+A data product is the production output from a statistical analysis. Data products automate complex analysis tasks or use technology to expand the utility of a data informed model, algorithm or inference. This course covers the basics of creating data products using Shiny, R packages, and interactive graphics. The course will focus on the fundamentals of creating a data product that can be used to tell a story about data to a mass audience. 
 
-In this course you will learn how to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary for a statistical programming environment, discuss generic programming language concepts as they are implemented in a high-level statistical language. The course covers practical issues in statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, and organizing and commenting R code. Topics in statistical data analysis and optimization will provide working examples.
-Course Content
+In this class students will learn a variety of core tools for creating data products in R and R Studio in specific. Students will be evaluated via quizzes and a culminating project. 
+Course Content 
 
-- Week 1: Overview of R, R data types and objects, reading and writing data
+The lectures will be taught over four weeks with the third week dedicated to creating R packages. 
 
-- Week 2: Control structures, functions, scoping rules, dates and times
+The weeks are organized as follows
 
-- Week 3: Loop functions, debugging tools
+1. Shiny, rCharts, manipulate, googleVis 
+2. Presenting data analysis, slidify, R Studio presenter. 
+3. Students creating and deploying their projects 
+4. Creating R packages, classes and methods, yhat.
 
-- Week 4: Simulation, code profiling
+## Github repository 
 
-### Background lectures
+The most up to date information on the course lecture notes will always be in the Github repository 
 
-Background lectures about the content of the course with respect to other quantitative courses, course logistics, and the R programming language are provided as reference material. It is not necessary to watch the videos to complete the course, however you may find them useful.
+The data science specialization is here 
 
+https://github.com/DataScienceSpecialization/Developing_Data_Products
 
-### Course Textbook
+Please issue pull requests so that we may improve the materials.
 
-The book R Programming for Data Science covers all of the lecture material in this course.
+## YouTube 
 
-### Assessments
-#### Quizzes
+If you’d prefer to watch the videos on YouTube, most of them can be found here: 
 
-- There are four weekly quizzes. 
+https://www.youtube.com/playlist?list=PLpl-gQkQivXhr9PyOWSA3aOHf4ZNTrs90
 
-- You must earn a grade of at least 80% to pass a quiz.
+## Book: Developing Data Products in R 
 
-- You may attempt each quiz up to 3 times in 8 hours.
+This book introduces the topic of Developing Data Products in R. A data product is the ideal output of a Data Science experiment. This book is based on the Coursera Class “Developing Data Products” as part of the Data Science Specialization. Particular emphasis is paid to developing Shiny apps and interactive graphics. 
 
-- The score from your most successful attempt will count toward your final grade.
+The book is available here: https://leanpub.com/ddp 
 
-#### Programming Assignments
+It’s variable pricing, including free! It also includes some content (like leaflet) that was not covered in the class and omits some other. It’s a little rough, but as I work on it you’ll get all of the updates.
 
-- There are three required programming assignments.
+## Weekly quizzes
 
-- You must earn a grade of at least 80% to pass a programming assignment 
+- There are three weekly quizzes. 
+- You must earn a grade of at least 80% to pass a quiz 
+- You may attempt each quiz up to 3 times in 8 hours. 
+- The score from your most successful attempt will count toward your final grade
 
-- Programming Assignments 1 and 3 are graded via unit tests using a submission script that compares the output of your functions to the correct output.
+## Course Project 
 
-- Programming Assignment 2 is submitted differently and graded via a peer review.
+The Course Project is an opportunity to demonstrate the skills you have learned during the course. It is graded through peer assessment. You must earn a grade of at least 80% to pass the course project.
 
-#### swirl Programming Assignment (practice)
+## Grading policy 
 
-- In this course, you have the option to use the swirl R package to practice some of the concepts we cover in lectures.
+You must score at least 80% on all assignments (Quizzes & Project) to pass the course. 
 
-- While these lessons will give you valuable practice and you are encouraged to complete as many as possible, please note that they are completely optional and you can get full marks in the class without completing them.
+Your final grade will be calculated as follows: 
 
- 
-### Grading Policy
+- Quiz 1 = 20% 
+- Quiz 2 = 20% 
+- Quiz 3 = 20% 
+- Course project = 40%
 
-You must score at least 80% on all required assignments (Quizzes & Programming Assignments) to pass the course. Your final grade will be calculated as follows:
+-----------------------------------
 
-- Week 1 Quiz - 20%
+For this course, one project was developed:
 
-- Week 2 Quiz - 10%
-
-- Week 3 Quiz - 5%
-
-- Week 4 Quiz - 10%
-
-- Programming Assignment 1 (Air Pollution) - 20%
-
-- Programming Assignment 2 (Lexical Scoping) - 10%
-
-- Programming Assignment 3 (Hospital Quality) - 25%
-
-- swirl Programming Assignment (practice) - 0% 
-
---------------------------
-
-For the R programming course 3 projects were developed
-
-1. Air Pollution
-2. Lexical Scoping
-3. Hospital Quality
-
-The instructions for each project are:
-
-1. [Project 1 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%201%20-%20Instructions.md)
-2. [Project 2 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%202%20-%20Instructions.md)
-3. [Project 3 - Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/Project%203%20-%20Instructions.md  )
-
-The functions created for each projects are:
-
-1. [pollutantmean](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/pollutantmean.R) (Project 1)
-2. [complete](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/complete.R) (Project 1)
-3. [corr](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/corr.R) (Project 1)
-4. [cachematrix](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/RProgramming/cachematrix.R) (Project 2)
-
-For Project 2, the creation of a github repo was also required. The repo should contain the cachematrix function modified. The repo was forked and modified accordingly and the link to it can be found [here](https://github.com/ElisaRMA/ProgrammingAssignment2)
+- [Instructions]()
+- [Project]()
