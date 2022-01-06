@@ -1,8 +1,6 @@
-# Getting and Cleaning Data - Coursera
+# Data Science Capstone - Coursera
 
 Below, the course description copied from the course [page](https://www.coursera.org/learn/data-science-project)
-
-You are a data scientist now
 
 The goal of this data science specialization has been to give you the basic skills involved with being a data scientist. The goal of this capstone is to mimic the experience of being a data scientist. As a practicing data scientist it is entirely common to get a messy data set, a vague question, and very little instruction on exactly how to analyze the data. Our goal is to give you that same experience but with added support in the form of forums, discussion with instructors, feedback from SwiftKey and Coursera engineers, and a structured problem to solve. We hope that you will take advantage of the opportunity this project affords for you to demonstrate your skills and creativity. 
 Course Tasks
@@ -50,7 +48,7 @@ Later in the course you may use external data sets to augment your model as you 
 --------------------------
 
 The links for the github repo, slideck and app are:
-- [Instructions]()
+- [Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Data%20Science%20Capstone/Project-Instructions.md)
 - [Repo](https://github.com/ElisaRMA/Capstone-DS-Specialization)
 - [Slideck](https://rpubs.com/mirandeli/WordPred)
 - [App](https://mirandeli.shinyapps.io/wordpred/)
