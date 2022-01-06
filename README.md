@@ -12,7 +12,7 @@ The courses were:
 5.  [Reproducible Research](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/Reproducible%20Research)
 6.  [Statistical Inference](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/Statistical%20Inference)
 7.  [Regression Models](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/Regression%20Models)
-8.  Practical Machine Learning
+8.  [Practical Machine Learning](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/tree/main/Practical%20Machine%20Learning)
 9.  Developing Data Products
 10. Data Science Capstone
 

@@ -67,6 +67,5 @@ Your final grade will be calculated as follows:
 
 For this course, one project was developed, that should be divided into two parts:
 
-- [Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Statistical%20Inference/Project%20Instructions.md) 
-- [Project - RPubs publication](https://elisarma.github.io/Practical-ML-Coursera/index) 
-- [Project - Github Repo](https://github.com/ElisaRMA/Practical-ML-Coursera)
+- [Instructions](https://github.com/ElisaRMA/Coursera-Data-Science-Specialization/blob/main/Practical%20Machine%20Learning/Project%20Instructions.md) 
+- [Project publication](https://elisarma.github.io/Practical-ML-Coursera/index) 
